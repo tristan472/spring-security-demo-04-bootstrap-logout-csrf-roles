@@ -22,12 +22,4 @@ public class DemoSecurityConfig {
 		
 	}
 	
-	protected void configure(HttpSecurity http) throws Exception {
-		
-		http.authorizeHttpRequests()
-		.anyRequest().authenticated().and()
-		.formLogin().loginPage("/showMyLoginPage").loginProcessingUrl("authentificateTheUser")
-		.permitAll();
-	}
-	
 }
