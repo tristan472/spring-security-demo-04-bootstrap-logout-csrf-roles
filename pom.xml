@@ -42,11 +42,25 @@
 		</dependency>	
 		
 		<!-- Add Spring Security Taglibs support -->
+		
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-taglibs</artifactId>
 		    <version>${springsecurity.version}</version>
 		</dependency>	
+		
+		<!-- Add Mysql and CP30 support -->
+			
+			<dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>8.0.30</version>
+        </dependency>
+        <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-c3p0</artifactId>
+          <version>5.6.10.Final</version>
+        </dependency>
 			
 		<!-- Servlet, JSP and JSTL support -->
 		<dependency>
